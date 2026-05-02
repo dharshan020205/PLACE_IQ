@@ -1,0 +1,1 @@
+{"version": "1.0", "accuracy": 0.94, "last_trained_date": "2026-05-02T21:14:15.509390", "feature_names": ["cgpa", "coding_score", "aptitude_score", "communication_score", "skills_count", "projects_count", "internships_count", "backlogs"]}
