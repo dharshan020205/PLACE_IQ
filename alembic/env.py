@@ -21,6 +21,11 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from backend.models import Base
 target_metadata = Base.metadata
 
+config.set_main_option(
+    "sqlalchemy.url",
+    os.getenv("DATABASE_URL", "sqlite:///./placeiq.db")
+)
+
 # other values from the config, defined by the needs of env.py,
 # can be acquired:
 # my_important_option = config.get_main_option("my_important_option")
